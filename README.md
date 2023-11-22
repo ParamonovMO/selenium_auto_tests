@@ -1,2 +1,1 @@
-# stepik_auto_tests_course
-автотесты с курса selenium python
+# В репозитории хранятся файлы с решениями курса stepik/ selenium & python 
