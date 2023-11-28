@@ -1,1 +1,1 @@
-# В репозиторий хранятся файлы с решениями курса stepik/ selenium & python 
+Тут хранятся файлы с тестами selenium + python с курсов на stepik
