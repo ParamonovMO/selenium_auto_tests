@@ -1,16 +1,20 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
 g = Service()
 driver = webdriver.Chrome(options=options, service=g)
-driver.maximize_window()
-base_url = 'https://www.saucedemo.com/'
+base_url = 'https://demoqa.com/radio-button'
 driver.get(base_url)
-time.sleep(3)
+driver.maximize_window()
+
+radio_button = driver.find_element(By.CSS_SELECTOR, "[for='yesRadio']")
+radio_button.click()
+print("Click Radio Button")
+
+
+time.sleep(1)
 driver.close()
-
-
-
