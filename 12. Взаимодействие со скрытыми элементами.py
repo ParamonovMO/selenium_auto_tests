@@ -1,7 +1,6 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver import ActionChains
 
 login_standard_user = "standard_user"
 password_all = "secret_sauce"
