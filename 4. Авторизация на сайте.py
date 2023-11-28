@@ -21,6 +21,7 @@ try:
 
   button_login = driver.find_element(By.ID, "login-button")
   button_login.click()
+
 finally:
   time.sleep(3)
   driver.close()

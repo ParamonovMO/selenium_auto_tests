@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 login_standard_user = "standard_user"
-password_all = "secret_sauce"
+password_all = "secret_sauce123"
 
 try:
   driver = webdriver.Chrome()

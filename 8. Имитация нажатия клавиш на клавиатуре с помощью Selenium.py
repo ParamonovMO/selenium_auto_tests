@@ -15,7 +15,7 @@ try:
   username.send_keys(login_standard_user)
   print("Input login")
   #Удаляет один символ с конца т.е. получится standard_use, а для того, чтобы удалить несколько символов, можно написать
-  username.send_keys(Keys.BACKSPACE * 10)
+  #username.send_keys(Keys.BACKSPACE * 10)
   username.send_keys(Keys.BACKSPACE)
   #Вставим стёртый символ r
   username.send_keys("r")
