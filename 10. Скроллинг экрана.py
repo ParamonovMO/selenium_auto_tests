@@ -30,10 +30,10 @@ try:
 #перемещаемся к данному элементу"""
   action.move_to_element(red_t_shirt).perform()
 
-now_date = datetime.datetime.utcnow().strftime("%Y.%m.%d.%H.%M.%S")
-name_screenshot = "screenshot" + now_date + '.png'
+  name_screenshot = "screenshot" + '.png'
 
-driver.save_screenshot('C:\\Autotesting_python_selenium_stepik\\4. Базовый курс Selenium\\screenshots\\' + name_screenshot)
+  driver.save_screenshot('C:\\Autotesting_python_selenium_stepik\\4. Базовый курс Selenium\\screenshots\\' + name_screenshot)
+
 finally:
   time.sleep(3)
   driver.close()

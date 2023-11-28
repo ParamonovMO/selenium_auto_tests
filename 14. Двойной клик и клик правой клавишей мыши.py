@@ -17,6 +17,10 @@ try:
   action.context_click(right_click).perform()
   print("Click RightClick Button")
 
+  click = driver.find_element(By.XPATH, "//button[@id='FDEr6']")
+  click.click()
+  print("Click Button")
+
 finally:
   time.sleep(1)
   driver.close()

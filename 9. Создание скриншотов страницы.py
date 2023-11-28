@@ -20,11 +20,11 @@ try:
   button_login = driver.find_element(By.CSS_SELECTOR, "#login-button")
   button_login.click()
   print("Click login button")
-#Создаём переменную и задаём ей дату
-  now_date = datetime.datetime.utcnow().strftime("%Y.%m.%d.%H.%M.%S")
-  name_screenshot = "screenshot" + now_date + '.jpg'
+
+  name_screenshot = "screenshot" + '.png'
+
 #Создаём скриншот
-  driver.save_screenshot('F:\\Autotesting_python_selenium_stepik\\4. Базовый курс Selenium\\screenshots\\' + name_screenshot)
+  driver.save_screenshot("C:\\" + name_screenshot)
 finally:
   time.sleep(3)
   driver.close()
