@@ -1,16 +1,10 @@
 import time
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 
-options = webdriver.ChromeOptions()
-options.add_experimental_option("detach", True)
-g = Service()
-driver = webdriver.Chrome(options=options, service=g)
-driver.maximize_window()
-base_url = 'https://www.saucedemo.com/'
-driver.get(base_url)
-time.sleep(3)
-driver.close()
-
-
-
+driver = webdriver.Chrome() #определяем драйвер хром
+link = 'https://www.saucedemo.com/' #присваиваем ссылку
+try: 
+  driver.get(link) #переход по ссылке
+finally:
+  time.sleep(3) #время ожидания 
+  driver.close() #закрытие брайзера
