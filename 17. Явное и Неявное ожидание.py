@@ -30,3 +30,5 @@ print('Finish Test')
 # visible_button = driver.find_element(By.CSS_SELECTOR, "#visibleAfter")
 # visible_button.click()
 # print('Finish Test')
+
+driver.close()
